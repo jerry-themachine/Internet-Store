@@ -1,0 +1,47 @@
+.indicativo {
+    background-image: url(../img/back4.jpg);
+    text-align: center;
+    background-size: cover;
+    background-color: #00161c;
+    padding: 200px 20px 30px 20px;
+    color: #fff;
+}
+
+
+.indicativo-titulo {
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', serif;
+    font-size: 35PX;
+    line-height: 1;
+}
+
+.indicativo-texto {
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    font-size: 1.25em;
+    font-weight: normal;
+
+}
+
+.indicativo-cta {
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+    line-height: 2.5;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: .2s ease-in;
+}
+
+.indicativo-cta:hover,
+.indicativo-cta:focus {
+    background: #fff;
+    color: #333;
+}
+  
+ 

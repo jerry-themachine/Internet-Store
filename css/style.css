@@ -1,0 +1,29 @@
+
+.container {
+    padding: 3.5em 5%;
+    margin: 0 auto;
+    max-width: 1000px;
+}  
+  
+.btnPadrao {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 900;
+    padding: .3em 1em;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    outline: 0;
+    text-decoration: none;
+}
+  
+.btnPadrao:hover,
+.btnPadrao:focus {
+    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+    cursor: pointer;
+    font-weight: lighter;
+}
+  
+
+  
