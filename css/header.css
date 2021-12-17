@@ -10,6 +10,9 @@
 }
   
 .header-logo {
+    position: absolute;
+    right: 765px;
+    top: 40px;
     margin-bottom: 2px;
     text-decoration: none;
 }
@@ -37,20 +40,23 @@
 }
   
 .header-nav {
-    text-align: center;
+    position: relative;
+    right: -45px;
+    text-align: end;
 }
   
 .header-nav-item {
     display: inline-block;
     line-height: 2;
-    margin: 0 .5em;
-    font-size: .95em;
+    margin: 0 8px;
+    font-size: 15px;
 }
   
 .header-nav-item a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(245, 245, 245);
     font-family: 'Open Sans', serif;
+  
   
 }
   
