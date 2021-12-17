@@ -1,0 +1,74 @@
+.info_tecnica {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.info_tecnica-diferencial {
+    margin: 0 50px 60px 0px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 300px;
+    padding: 0 15px 15px 15px;
+   /*  border: 1px solid rgb(216, 205, 205); */
+    border-radius: 15px;
+}
+
+.info_tecnica-diferencial-titulo {
+    color: #1a1818;
+    font-size: 20px;      
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 0 30px 40px;   
+    transform: translateX(-42px);
+    text-transform: uppercase;
+}
+
+.info_tecnica-diferencial-texto {
+    font-size: 14px;
+    text-align: left;
+}
+
+.imagem {
+    position: relative;
+    left: -5px;
+    top: 35px;
+}
+
+.info_tecnica-diferencial-titulo--tecnologia {
+    margin-left: 50px;
+}
+
+
+.info_tecnica-diferencial-titulo--qualidade {
+    margin-left: 50px;    
+}
+
+
+.info_tecnica-diferencial-titulo--especialistas {
+    margin-left: 50px;
+}
+
+
+
+
+@media (min-width: 830px) {
+
+    .secaoDiferenciais {
+        padding-bottom: 0;
+        background-color: #f7f4f4;
+    }
+
+
+    .diferenciais-diferencial {
+        margin: 0 .5em;
+        font-size: .9em;
+        max-width: 260px;
+    }
+
+}
