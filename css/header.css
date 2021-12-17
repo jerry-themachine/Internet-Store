@@ -4,23 +4,19 @@
     left: 50%;
     transform: translate(-50%);
     text-align: center;
-    width: 100%;
-    /* border-bottom: 1px solid #103d4a; */
+    width: 100%;   
     padding-bottom: 5px;   
 }
   
 .header-logo {
-    position: absolute;
-    right: 765px;
-    top: 40px;
-    margin-bottom: 2px;
-    text-decoration: none;
+    margin-bottom: .2em;
+    text-decoration: none;   
 }
   
 .header-logo-img {
     width: 205px;
     height: 59px;
-    margin: 0 auto;
+    margin-left: -300px;
     display: block;
     transition: filter .3s;
 }
@@ -31,18 +27,18 @@
 }
   
 .header-title {
-    position: relative;
+    position: relative;   
+    left: -200px;
     bottom: 63px;
-    left: 50px;
     font-size: 11.68px;
     text-decoration: none;
-    color: rgb(165, 173, 187);
+    color: rgb(165, 173, 187);    
 }
   
-.header-nav {
-    position: relative;
-    right: -45px;
+.header-nav {    
     text-align: end;
+    float: right;
+    margin-right: -380px;    
 }
   
 .header-nav-item {
@@ -55,13 +51,94 @@
 .header-nav-item a {
     text-decoration: none;
     color: rgb(245, 245, 245);
-    font-family: 'Open Sans', serif;
-  
-  
+    font-family: 'Open Sans', serif;  
 }
   
 .header-nav-item a:hover,
 .header-nav-item a:focus {
     text-decoration: underline;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+      border-bottom: 0;
+      padding-bottom: 0
+    }  
+
+    .header-logo {
+        position: absolute;
+    }
+
+    .header-logo-img {
+        position: relative;
+        left: 40px;
+        width: 140px; 
+        height: auto;  
+
+    }
+
+    .header-logo, .header-logo-img {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-title {
+        position: relative;   
+        left: -37px;
+        bottom: 3px;
+        font-size: 8.5px;        
+    }
+    
+    .header-nav {
+        position: relative;
+        float: auto;
+        right: 190px;
+        margin-top: 0; 
+        top: 60px;
+    }
+    
+    .header-nav-item {
+        font-size: 12px;
+        margin: 02px;
+        padding: 0;
+
+    }
+  
+  }
+
+  @media screen and (max-width: 360px) {
+    
+    .header-logo, .header-logo-img {
+        float: left;
+        width: auto;
+    }
+
+    .header-logo-img {
+        position: relative;
+        left: 40px;
+        width: 140px; 
+        height: auto;  
+
+    }
+
+    .header-title {
+        position: relative;   
+        left: -35px;
+        bottom: 1px;
+        font-size: 8.5px;        
+    }
+
+    .header-nav {
+        float: left;
+        margin-top: 30px;
+    }
+
+    .header-nav-item {
+        font-size: 12px;
+        margin: 0 2px;
+    }
+      
 }
