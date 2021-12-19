@@ -1,11 +1,11 @@
 .indicativo {
-    background-image: url(../img/back3.png);
+    background-image: url(../img/opacity_back3.png);
     height: 490px;
     text-align: center;
     background-size: cover;
-    background-color: #00161c;
+    background-color: #312225;
     padding: 200px 20px 30px 20px;
-    color: #fff;
+    color: #fff;   
 }
 
 .indicativo-titulo {
@@ -24,12 +24,12 @@
     right: 10px;
     max-width: 600px;
     margin: 0 auto 0 auto;
-    font-size: 1.25em;
+    font-size: 17px;
     font-weight: normal;
 
 }
 
-.indicativo-cta {
+.indicativo-botao {
     position: relative;
     bottom: 35px;
     right: 6px;
@@ -46,8 +46,8 @@
     transition: .2s ease-in;
 }
 
-.indicativo-cta:hover,
-.indicativo-cta:focus {
+.indicativo-botao:hover,
+.indicativo-botao:focus {
     background: #fff;
     color: #333;
 }

@@ -2,12 +2,12 @@
 .container {
     display: flex;
     justify-content: center;
-    padding: 3.5em 5%;
+    padding: 56px 5%;
     margin: 0 auto;
     max-width: 1000px;
 }  
   
-.btnPadrao {
+.botao {
     border-radius: 5px;
     border: 1px solid #FFF;
     background: transparent;
