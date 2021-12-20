@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/cards_1.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/tecnica.css">
     <link rel="stylesheet" href="css/header.css">
@@ -16,25 +17,25 @@
 </head>
 
 <body>
-    <header class="header container">
-        <a href="#" class="header-logo">
+    <header class="header container" id="header">
+        <a href="#header" class="header-logo">
             <img class="header-logo-img" src="img/logo2.png">
             <desc class="header-title">By Inovation World</desc>
         </a>
 
         <nav class="header-nav">
             <ul>
-                <li class="header-nav-item"><a href="#">Ínicio</a></li>
-                <li class="header-nav-item"><a href="#">Planos</a></li>
-                <li class="header-nav-item"><a href="#">Empresas</a></li>
-                <li class="header-nav-item"><a href="#">Eventos</a></li>
+                <li class="header-nav-item"><a href="#inicio">Ínicio</a></li>
+                <li class="header-nav-item"><a href="#sobre">Sobre</a></li>
+                <li class="header-nav-item"><a href="#pre-pos">Pré/Pós</a></li>
+                <li class="header-nav-item"><a href="#empresa">Empresas</a></li>
                 <li class="header-nav-item"><a href="#">Institucional</a></li>
                 <li class="header-nav-item"><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
-
-    <main class="conteudo-principal">
+    <!--main-->
+    <main class="conteudo-principal">       
         <section class="indicativo">
             <h1 class="indicativo-titulo">
                 INTERNET SOB MEDIDA PRA VOCÊ
@@ -48,64 +49,75 @@
                 Conheça nossos serviços
             </button>
         </section>
-    <!--tecnica-->
-        <section class="tecnica">
-            <div class="info">
-                <ul class="info-tecnica">
-                    <li class="info-tecnica-diferencial">
-                        <img class="imagem" src="img/icone5G.png" alt="Ícone internet 5G">
-                        <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--tecnologia">
-                            Tecnologia
-                        </h2>
-                        <p class="info-tecnica-diferencial-texto">
-                            Fornecemos conexão 5G através de provedores de útltima geração, capazes de transmitir e
-                            receber sinais digitais com alta qualidade utilizando sitemas de satélites e cabos
-                            submarinos.
-                        </p>
-                    </li>
-                    <li class="info-tecnica-diferencial">
-                        <img class="imagem" src="img/icone-qualidade.png" alt=" Ícone velocidade internet">
-                        <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--qualidade">
-                            Qualidade
-                        </h2>
-                        <p class="info-tecnica-diferencial-texto">
-                            Oferecemos uma banda larga com ultravelocidade de até 750 mega, proporcionando downloads e
-                            uploaads hiper rápidos, somados a uma conexão wi-fi de excelente qualidade.
-                        </p>
-                    </li>
-                    <li class="info-tecnica-diferencial">
-                        <img class="imagem" src="img/icone-equipe.png" alt="Ícone pessoa usando notebook">
-                        <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--especialistas">
-                            Especialistas
-                        </h2>
-                        <p class="info-tecnica-diferencial-texto">
-                            Temos uma grande equipe formada por profissionais dedicados e com ampla experiência para
-                            melhor atender e levar até você e seu negócio, a melhor internet banda larga do país.
-                        </p>
-                    </li>
-                </ul>
+        <!--tecnica-->
+        <section class="tecnica"  id="inicio">
+            <div class="tecnica-container">
+                <div class="tecnica-titulo">
+                    <h2>
+                        SERVIÇOS ESPECIAIS
+                    </h2>
+                </div>
+                <div class="info">
+                    <ul class="info-tecnica">
+                        <li class="info-tecnica-diferencial">
+                            <img class="imagem" src="img/icone5G.png" alt="Ícone internet 5G">
+                            <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--tecnologia">
+                                Tecnologia
+                            </h2>
+                            <p class="info-tecnica-diferencial-texto">
+                                Fornecemos conexão 5G através de provedores de útltima geração, capazes de transmitir e
+                                receber sinais digitais com alta qualidade utilizando sitemas de satélites e cabos
+                                submarinos.
+                            </p>
+                        </li>
+                        <li class="info-tecnica-diferencial">
+                            <img class="imagem" src="img/icone-qualidade.png" alt=" Ícone velocidade internet">
+                            <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--qualidade">
+                                Qualidade
+                            </h2>
+                            <p class="info-tecnica-diferencial-texto">
+                                Oferecemos uma banda larga com ultravelocidade de até 750 mega, proporcionando downloads e
+                                uploaads hiper rápidos, somados a uma conexão wi-fi de excelente qualidade.
+                            </p>
+                        </li>
+                        <li class="info-tecnica-diferencial">
+                            <img class="imagem" src="img/icone-equipe.png" alt="Ícone pessoa usando notebook">
+                            <h2 class="info-tecnica-diferencial-titulo info-tecnica-diferencial-titulo--especialistas">
+                                Especialistas
+                            </h2>
+                            <p class="info-tecnica-diferencial-texto">
+                                Temos uma grande equipe formada por profissionais dedicados e com ampla experiência para
+                                melhor atender e levar até você e seu negócio, a melhor internet banda larga do país.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-    <!--Sobre-->
-        <section class="sobre invisivel">
+        <!--sobre-->
+        <section class="sobre invisivel" id="sobre" >
             <div class="sobre-info">
                 <img src="img/inicio.png" class="sobre-img">
                 <div class="sobre-texo">
                     <div class="sobre-titulo">
                         <h2>SOBRE O MERCADO</h2>
-                    </div>                
+                    </div>
                     <div class="sobre-texto-primeiro">
                         <p>
-                            O que os usuários consideram fundamentais em um provedor de internet para obter uma experiência
+                            O que os usuários consideram fundamentais em um provedor de internet para obter uma
+                            experiência
                             satisfatória?
                         </p>
                     </div>
                     <div class="sobre-texto-segundo">
                         <p>
-                            De acordo com um estudo realizado por uma empresa de Londres que analisou o cenário de usuários de
-                            30 países diferentes, incluindo o Brasil, conclui-se que entre as principais exigências estão:
+                            De acordo com um estudo realizado por uma empresa de Londres que analisou o cenário de
+                            usuários de
+                            30 países diferentes, incluindo o Brasil, conclui-se que entre as principais exigências
+                            estão:
                             velocidade, tempo de resposta, buffering e recursos.
-                            Para tornar esse cenário favorável aos nossos clientes, a Jaytech decidiu dar um passo à frente na
+                            Para tornar esse cenário favorável aos nossos clientes, a Jaytech decidiu dar um passo à
+                            frente na
                             utilização de tecnologias avançadas e — o mais importante — acessíveis.
                             Nosso foco principal são as diretrizes criadas enfatizando o atendimento às normas e demais
                             regularizações para garantir os direitos do cliente e os deveres da empresa.
@@ -114,27 +126,141 @@
                     <div class="sobre-texto-terceiro">
                         <p>
                             <b>
-                                A Jaytech promove uma ótima experiência dentro do mercado nacional de provedores de internet!
+                                A Jaytech promove uma ótima experiência dentro do mercado nacional de provedores de
+                                internet!
                             </b>
                         </p>
                     </div>
-                    <div class="sobre-social" >
+                    <div class="sobre-social">
                         <ul class="sobre-social-midia">
                             <li><img class="sobre-social-img" src="img/android.png" alt="Ícone do Android"></li>
                             <li><img class="sobre-social-img" src="img/blackberry.png" alt="Ícone da Blackberry"></li>
                             <li><img class="sobre-social-img" src="img/apple.png" alt="Ícone do iOS"></li>
-                            <li><img class="sobre-social-img" src="img/windowsphone.png" alt="Ícone do Windows Phone"></li>
-                          </ul>
-                          <div class="sobre-social-texto">
-                              <p>
+                            <li><img class="sobre-social-img" src="img/windowsphone.png" alt="Ícone do Windows Phone">
+                            </li>
+                        </ul>
+                        <div class="sobre-social-texto">
+                            <p>
                                 Baixe nosso aplicativo para todas as plataformas
-                              </p>
-                          </div>
+                            </p>
+                        </div>
                     </div>
-                </div>               
+                </div>
             </div>
         </section>
-        
+        <!--cards_1-->
+        <section class="cards_1" id="pre-pos">
+            <h2 class="cards_1-titulo">
+                PLANOS PRÉ E PÓS
+            </h2>
+            <div class="cards_1-container">
+                <div class="cards_1-plano cards_1-plano_1">
+                    <h3 class="cards_1-plano-titulo">Smart 30</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 49,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>30 mega de internet válidos por 30 dias</li>
+                        <li>Whatsapp e Twitter com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li><br>
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+
+                <div class="cards_1-plano cards_1-plano_2">
+                    <h3 class="cards_1-plano-titulo">Master 60</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 89,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>60 mega de internet válidos por 30 dias</li>
+                        <li>Whatsapp, Twitter, Instagram e Facebook com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li>
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+
+                <div class="cards_1-plano cards_1-plano_3">
+                    <h3 class="cards_1-plano-titulo">Full 200</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 179,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>200 mega de internet válidos por 30 dias</li>
+                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li>
+
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--cards_2-->
+        <section class="cards_1" id="empresa">
+            <h2 class="cards_1-titulo">
+                PLANO EMPRESA
+            </h2>
+            <div class="cards_1-container">
+                <div class="cards_1-plano cards_1-plano_1">
+                    <h3 class="cards_1-plano-titulo">Top 300</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 269,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>300 mega de internet</li>
+                        <li>Internet 4G, 5G e 5G Plus</li>
+                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li>
+                        <li>Atendimento 24h</li>
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+
+                <div class="cards_1-plano cards_1-plano_2">
+                    <h3 class="cards_1-plano-titulo">Ultra 500</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 459,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>500 mega de internet</li>
+                        <li>Internet 4G, 5G e 5G Plus</li>
+                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li>
+                        <li>Atendimento 24h</li>
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+
+                <div class="cards_1-plano cards_1-plano_3">
+                    <h3 class="cards_1-plano-titulo">Mega 700</h3>
+                    <h4 class="cards_1-plano-preco">
+                        R$ 649,90
+                    </h4>
+                    <ul class="cards_1-plano-itens">
+                        <li>700 mega de internet</li>
+                        <li>Internet 4G, 5G e 5G Plus</li>
+                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li>Ligações ilimitadas para qualquer operadora</li>
+                        <li>Atendimento 24h</li>
+                    </ul>
+                    <a href="#" class="cards_1-plano-btn">
+                        Assinar plano
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 </body>
 

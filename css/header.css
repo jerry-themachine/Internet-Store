@@ -60,7 +60,7 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
 
     .header {
       border-bottom: 0;
@@ -137,7 +137,7 @@
     }
 
     .header-nav-item {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0 2px;
     }
       

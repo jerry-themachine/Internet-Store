@@ -35,7 +35,7 @@
     right: 6px;
     background-color: transparent;
     border: 1px solid rgb(245, 133, 4);
-    font-size: 1em;
+    font-size: 15px;
     width: 100%;
     max-width: 300px;
     line-height: 2.5;
@@ -52,40 +52,13 @@
     color: #333;
 }
 
-@media (max-width: 768px) {
-
-    .indicativo {
-        font-size: 11px;
-        border-bottom: 0;
-        padding-bottom: 0;
-        height: auto;
-    }  
-
-    .indicativo-texto {
-        float: auto;
-        right: 0px;
-    }
-
-    .indicativo-titulo {
-        float: auto;
-        font-size: 32px;
-        right: 0px;
-    }
-
-    .indicativo-cta {
-        position: relative;
-        bottom: 35px;
-        right: 0px;        
-        width: 100%;
-        
-    }
-}
 
 @media (max-width: 360px) {
 
     .indicativo-texto {
         float: auto;
         right: 0px;
+        font-size: 14px;
     }
     
     .indicativo-cta {
@@ -97,8 +70,15 @@
 
     .indicativo-titulo {
         float: auto;
-        font-size: 28px;
+        font-size: 22px;
         right: 0px;
+    }
+
+    .indicativo-botao {
+        font-size: 12px;
+        width: 100%;
+        max-width: 220px;
+        line-height: 1.2;        
     }
 }
 

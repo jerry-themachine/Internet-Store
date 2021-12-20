@@ -1,0 +1,137 @@
+.cards_1-titulo {
+    margin-top: 30px;
+}
+
+.cards_1-container {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: nowrap;      
+    padding: 0 40px 40px 40px;
+    margin: 20px 0 30px 0;
+    max-width: 100%;
+}
+
+.cards_1 {
+    text-align: center;
+    background-color: #F7F4F4;
+    padding: 5px;
+}
+  
+.cards_1-plano {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 80%;
+    margin: 8px 15px 8px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 9px #ddd;
+    max-width: 300px;
+    
+  
+}
+  
+.cards_1-plano_1 {
+    color: #197ea0;
+}
+  
+.cards_1-plano_2 {
+    color: #f56f21;
+}
+  
+.cards_1-plano_3 {
+    color: #44c033;
+}
+  
+.cards_1-plano-titulo {
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 25px;
+    border-bottom: 1px solid #DFE3E5;
+    margin-bottom: 8px;
+}
+ 
+.cards_1-plano-preco {
+    color: inherit;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    position: relative;
+}
+  
+.cards_1-plano-itens {
+    font-size: 17px;
+    text-align: left;
+    padding-left: 30px;
+    margin: 15px auto 25px auto;
+    line-height: 2;
+    list-style: disc;
+    color: #666;
+    width: 240px;
+    line-height: 30px; 
+}
+  
+.cards_1-plano-btn {
+    color: inherit;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: inherit;
+    border-radius: 5px;
+    padding: 5px 25px;
+    transition: .1s ease-in;
+}
+  
+.cards_1-plano-btn:hover,
+.cards_1-plano-btn:focus {
+    color: #fff;
+}
+  
+.cards_1-plano:nth-of-type(1) .cards_1-plano-btn:hover,
+.cards_1-plano:nth-of-type(1) .cards_1-plano-btn:focus {
+    background-color: #197ea0;
+}
+  
+.cards_1-plano:nth-of-type(2) .cards_1-plano-btn:hover,
+.cards_1-plano:nth-of-type(2) .cards_1-plano-btn:focus {
+    background-color: #f56f21;
+}
+  
+.cards_1-plano:nth-of-type(3) .cards_1-plano-btn:hover,
+.cards_1-plano:nth-of-type(3) .cards_1-plano-btn:focus {
+    background-color: #44c033;
+}
+  
+
+@media screen and (max-width: 767px) {
+
+    .cards_1-container {       
+        flex-wrap: wrap;      
+        padding: 0px 5%;
+        margin: 0 auto;        
+    }
+
+    .cards_1-plano {       
+        width: 80%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        box-shadow: 0 1px 3px #ddd;
+        max-width: 300px;
+        display: inline-block;      
+    }
+
+    .cards_1-plano-titulo {                
+        padding: 5px 15px;
+        font-size: 18px;     
+    }
+
+    .cards_1-plano-preco {       
+        font-size: 32px;        
+    }   
+
+}
