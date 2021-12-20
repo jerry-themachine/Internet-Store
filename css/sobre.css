@@ -12,11 +12,14 @@
 }
 
 .sobre-titulo { 
-    display: flex; 
-    font-family: 'Montserrat', serif;
-    font-size: 17px;
-    margin-bottom: 25px;
-    color: #4F4C4C;
+    display: flex;       
+    margin-bottom: 25px;    
+}
+
+.sobre-titulo-txt {
+    font-family: 'Montserrat', serif;  
+    font-size: 25px;
+    color: #5f5a5a;
     text-align: center;
     text-transform: uppercase;
 }
@@ -28,6 +31,10 @@
     padding: 25px;
     margin: 0 0 15px 0;
     order: 1;
+}
+
+.sobre-texto-txt {
+    font-size: 17px;
 }
 
 .sobre-img {
@@ -71,8 +78,11 @@
     }
 
     .sobre-titulo {
-        justify-content: center;
-        font-size: 13px;
+        justify-content: center;        
+    }
+
+    .sobre-titulo-txt {
+        font-size: 17px;    
     }
 
     .sobre-img {
@@ -81,7 +91,12 @@
 
     .sobre-texto-primeiro, .sobre-texto-segundo, .sobre-texto-terceiro {
         font-size: 12px;
-    }    
+    }
+    
+    
+    .sobre-texto-txt {
+        font-size: 12px;
+    }
 
     .sobre-social-img {
         width: 25px;

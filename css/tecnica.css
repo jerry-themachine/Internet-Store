@@ -19,15 +19,18 @@
 
 .tecnica-titulo  {
     display: flex;
-    flex-wrap: wrap;       
-    font-family: 'Montserrat', serif;
-    font-size: 17px;
+    flex-wrap: wrap;      
     width: 80%;
     padding-left: 10px;
-    justify-content: flex-start;
-    color: #4F4C4C;  
+    justify-content: flex-start;   
     margin-bottom: 20px;
     order: 1;   
+}
+
+.tecnica-titulo-txt {
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+    color: #726c6c;  
 }
 
 .info {
@@ -105,9 +108,14 @@
     .tecnica-titulo {   
         justify-content: center; 
         align-items: center;    
-        text-align: center;
-        
-        font-size: 12px;  
+        text-align: center;                  
+    }
+
+    .tecnica-titulo-txt {   
+        justify-content: center; 
+        align-items: center;    
+        text-align: center;        
+        font-size: 17px;  
         margin-top: 30px;     
     }
 
@@ -134,24 +142,24 @@
     
     .info-tecnica-diferencial-titulo--tecnologia {
         margin-left: 90px;
-        font-size: 12px ;      
+        font-size: 14px ;      
     }    
     
     .info-tecnica-diferencial-titulo--qualidade {
         flex-wrap: wrap;
         margin-left: 90px;  
-        font-size: 12px;       
+        font-size: 14px;       
     }    
     
     .info-tecnica-diferencial-titulo--especialistas {
         flex-wrap: wrap;
         margin-left: 90px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .info-tecnica-diferencial-texto {
         flex-wrap: wrap;
         margin-left: 50px;
-        font-size: 10px;
+        font-size: 12px;
     }
 }

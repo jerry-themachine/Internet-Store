@@ -10,7 +10,7 @@
 
 .indicativo-titulo {
     position: relative;
-    bottom: 38px;
+    bottom: 34px;
     font-weight: bold;
     margin-bottom: 92px;
     font-family: 'Montserrat', serif;
@@ -30,6 +30,7 @@
 }
 
 .indicativo-botao {
+    display: block;
     position: relative;
     bottom: 35px;
     right: 6px;
@@ -37,13 +38,17 @@
     border: 1px solid rgb(245, 133, 4);
     font-size: 15px;
     width: 100%;
-    max-width: 300px;
-    line-height: 2.5;
-    cursor: pointer;
-    display: block;
+    max-width: 200px;
+    line-height: 1.2;
+    cursor: pointer;    
     text-decoration: none;
     margin: 0 auto;
     transition: .2s ease-in;
+    border-radius: 5px;
+    font-weight: 900;   
+    color: #fff;    
+    padding: 3px 12px;
+   
 }
 
 .indicativo-botao:hover,
@@ -53,7 +58,7 @@
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 769px) {
 
     .indicativo-texto {
         float: auto;

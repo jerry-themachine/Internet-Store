@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/utilidades.css">
     <link rel="stylesheet" href="css/cards_1.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/tecnica.css">
@@ -15,27 +15,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Projeto - Internet Store</title>
 </head>
-
 <body>
     <header class="header container" id="header">
         <a href="#header" class="header-logo">
             <img class="header-logo-img" src="img/logo2.png">
             <desc class="header-title">By Inovation World</desc>
         </a>
-
         <nav class="header-nav">
             <ul>
                 <li class="header-nav-item"><a href="#inicio">Ínicio</a></li>
                 <li class="header-nav-item"><a href="#sobre">Sobre</a></li>
                 <li class="header-nav-item"><a href="#pre-pos">Pré/Pós</a></li>
                 <li class="header-nav-item"><a href="#empresa">Empresas</a></li>
-                <li class="header-nav-item"><a href="#">Institucional</a></li>
+                <li class="header-nav-item"><a href="#utilidade">Utilidades</a></li>
                 <li class="header-nav-item"><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <!--main-->
-    <main class="conteudo-principal">       
+    <main class="conteudo-principal">
         <section class="indicativo">
             <h1 class="indicativo-titulo">
                 INTERNET SOB MEDIDA PRA VOCÊ
@@ -44,16 +42,15 @@
                 A Jaytech é uma das maiores empresas de internet do país, há anos fornece banda larga de um jeito
                 inovador para pequenas e médias empresas.
             </h2>
-
-            <button class="indicativo-botao botao">
+            <button class="indicativo-botao">
                 Conheça nossos serviços
             </button>
         </section>
         <!--tecnica-->
-        <section class="tecnica"  id="inicio">
+        <section class="tecnica" id="inicio">
             <div class="tecnica-container">
                 <div class="tecnica-titulo">
-                    <h2>
+                    <h2 class="tecnica-titulo-txt">
                         SERVIÇOS ESPECIAIS
                     </h2>
                 </div>
@@ -76,7 +73,8 @@
                                 Qualidade
                             </h2>
                             <p class="info-tecnica-diferencial-texto">
-                                Oferecemos uma banda larga com ultravelocidade de até 750 mega, proporcionando downloads e
+                                Oferecemos uma banda larga com ultravelocidade de até 750 mega, proporcionando downloads
+                                e
                                 uploaads hiper rápidos, somados a uma conexão wi-fi de excelente qualidade.
                             </p>
                         </li>
@@ -95,22 +93,22 @@
             </div>
         </section>
         <!--sobre-->
-        <section class="sobre invisivel" id="sobre" >
+        <section class="sobre invisivel" id="sobre">
             <div class="sobre-info">
                 <img src="img/inicio.png" class="sobre-img">
                 <div class="sobre-texo">
                     <div class="sobre-titulo">
-                        <h2>SOBRE O MERCADO</h2>
+                        <h2 class="sobre-titulo-txt">SOBRE O MERCADO</h2>
                     </div>
                     <div class="sobre-texto-primeiro">
-                        <p>
+                        <p class="sobre-texto-txt">
                             O que os usuários consideram fundamentais em um provedor de internet para obter uma
                             experiência
                             satisfatória?
                         </p>
                     </div>
                     <div class="sobre-texto-segundo">
-                        <p>
+                        <p class="sobre-texto-txt">
                             De acordo com um estudo realizado por uma empresa de Londres que analisou o cenário de
                             usuários de
                             30 países diferentes, incluindo o Brasil, conclui-se que entre as principais exigências
@@ -124,7 +122,7 @@
                         </p>
                     </div>
                     <div class="sobre-texto-terceiro">
-                        <p>
+                        <p class="sobre-texto-txt">
                             <b>
                                 A Jaytech promove uma ótima experiência dentro do mercado nacional de provedores de
                                 internet!
@@ -133,10 +131,10 @@
                     </div>
                     <div class="sobre-social">
                         <ul class="sobre-social-midia">
-                            <li><img class="sobre-social-img" src="img/android.png" alt="Ícone do Android"></li>
-                            <li><img class="sobre-social-img" src="img/blackberry.png" alt="Ícone da Blackberry"></li>
-                            <li><img class="sobre-social-img" src="img/apple.png" alt="Ícone do iOS"></li>
-                            <li><img class="sobre-social-img" src="img/windowsphone.png" alt="Ícone do Windows Phone">
+                            <li class="cards_1-plano-item" ><img class="sobre-social-img" src="img/android.png" alt="Ícone do Android"></li>
+                            <li class="cards_1-plano-item" ><img class="sobre-social-img" src="img/blackberry.png" alt="Ícone da Blackberry"></li>
+                            <li class="cards_1-plano-item" ><img class="sobre-social-img" src="img/apple.png" alt="Ícone do iOS"></li>
+                            <li class="cards_1-plano-item" ><img class="sobre-social-img" src="img/windowsphone.png" alt="Ícone do Windows Phone">
                             </li>
                         </ul>
                         <div class="sobre-social-texto">
@@ -150,7 +148,7 @@
         </section>
         <!--cards_1-->
         <section class="cards_1" id="pre-pos">
-            <h2 class="cards_1-titulo">
+            <h2 class="cards_1-titulo-txt">
                 PLANOS PRÉ E PÓS
             </h2>
             <div class="cards_1-container">
@@ -160,40 +158,37 @@
                         R$ 49,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>30 mega de internet válidos por 30 dias</li>
-                        <li>Whatsapp e Twitter com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li><br>
+                        <li class="cards_1-plano-item" >30 mega de internet válidos por 30 dias</li>
+                        <li class="cards_1-plano-item" >Whatsapp e Twitter com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li><br>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
                     </a>
                 </div>
-
                 <div class="cards_1-plano cards_1-plano_2">
                     <h3 class="cards_1-plano-titulo">Master 60</h3>
                     <h4 class="cards_1-plano-preco">
                         R$ 89,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>60 mega de internet válidos por 30 dias</li>
-                        <li>Whatsapp, Twitter, Instagram e Facebook com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li>
+                        <li class="cards_1-plano-item" >60 mega de internet válidos por 30 dias</li>
+                        <li class="cards_1-plano-item" >Whatsapp, Twitter, Instagram e Facebook com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
                     </a>
                 </div>
-
                 <div class="cards_1-plano cards_1-plano_3">
                     <h3 class="cards_1-plano-titulo">Full 200</h3>
                     <h4 class="cards_1-plano-preco">
                         R$ 179,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>200 mega de internet válidos por 30 dias</li>
-                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li>
-
+                        <li class="cards_1-plano-item" >200 mega de internet válidos por 30 dias</li>
+                        <li class="cards_1-plano-item" >Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
@@ -203,7 +198,7 @@
         </section>
         <!--cards_2-->
         <section class="cards_1" id="empresa">
-            <h2 class="cards_1-titulo">
+            <h2 class="cards_1-titulo-txt">
                 PLANO EMPRESA
             </h2>
             <div class="cards_1-container">
@@ -213,55 +208,134 @@
                         R$ 269,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>300 mega de internet</li>
-                        <li>Internet 4G, 5G e 5G Plus</li>
-                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li>
-                        <li>Atendimento 24h</li>
+                        <li class="cards_1-plano-item" >300 mega de internet</li>
+                        <li class="cards_1-plano-item" >Internet 4G, 5G e 5G Plus</li>
+                        <li class="cards_1-plano-item" >Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li>
+                        <li class="cards_1-plano-item" >Atendimento 24h</li>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
                     </a>
                 </div>
-
                 <div class="cards_1-plano cards_1-plano_2">
                     <h3 class="cards_1-plano-titulo">Ultra 500</h3>
                     <h4 class="cards_1-plano-preco">
                         R$ 459,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>500 mega de internet</li>
-                        <li>Internet 4G, 5G e 5G Plus</li>
-                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li>
-                        <li>Atendimento 24h</li>
+                        <li class="cards_1-plano-item" >500 mega de internet</li>
+                        <li class="cards_1-plano-item" >Internet 4G, 5G e 5G Plus</li>
+                        <li class="cards_1-plano-item" >Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li>
+                        <li class="cards_1-plano-item" >Atendimento 24h</li>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
                     </a>
                 </div>
-
                 <div class="cards_1-plano cards_1-plano_3">
                     <h3 class="cards_1-plano-titulo">Mega 700</h3>
                     <h4 class="cards_1-plano-preco">
                         R$ 649,90
                     </h4>
                     <ul class="cards_1-plano-itens">
-                        <li>700 mega de internet</li>
-                        <li>Internet 4G, 5G e 5G Plus</li>
-                        <li>Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
-                        <li>Ligações ilimitadas para qualquer operadora</li>
-                        <li>Atendimento 24h</li>
+                        <li class="cards_1-plano-item" >700 mega de internet</li>
+                        <li class="cards_1-plano-item" >Internet 4G, 5G e 5G Plus</li>
+                        <li class="cards_1-plano-item" >Whatsapp, Twitter, Netflix, Instagram, Facebook e Spotfy com uso ilimitado</li>
+                        <li class="cards_1-plano-item" >Ligações ilimitadas para qualquer operadora</li>
+                        <li class="cards_1-plano-item" >Atendimento 24h</li>
                     </ul>
                     <a href="#" class="cards_1-plano-btn">
                         Assinar plano
                     </a>
                 </div>
-
             </div>
         </section>
-
+        <!--utilidades-->
+        <section class="utilidades container" id="utilidade">
+            <div class="utilidades-inicio"></div>
+                <div class="utilidades-titulo">
+                    <h2 class="utilidades-titulo-txt">
+                        UTILIDADES
+                    </h2>
+                </div>            
+                <ul class="utilidades-artigos">
+                    <li id="util_1" class="utilidades-artigos-item">
+                        <article class="utilidades-artigos-artigo">
+                            <img src="img/fibra-otica.jpg" class="utilidades-artigos-artigo-img">
+                            <h2 class="utilidades-artigos-artigo-titulo">
+                                A história da fibra óptica
+                            </h2>
+                            <p class="utilidades-artigos-artigo-texto">
+                                No ano de 1870 houve a descoberta histórica de que a luz não caminha apenas em linha reta.
+                                Em Londres, o físico John Tyndall, através de uma lanterna e um recipiente opaco provou que
+                                no meio do feche de luz havia uma curva, ou seja, ele provou que a luz pode fazer curvas.
+                                Apesar dessa descoberta, foi apenas em 1952 que o físico indiano Narinder Singh Kapany
+                                começou a desenvolver os estudos que desencadeariam o importante nascimento da fibra óptica.
+                
+                                <a href="#" class="utilidades-artigos-artigo-link">
+                                    Continuar lendo o post 1
+                                </a>
+                            </p>
+                        </article>
+                    </li>
+                    <li id="util_2" class="utilidades-artigos-item">
+                        <article class="utilidades-artigos-artigo">
+                            <img src="img/tecnologia.jpeg" class="utilidades-artigos-artigo-img">
+                            <h2 class="utilidades-artigos-artigo-titulo">
+                                A expansão dos provedores de internet no Brasil
+                            </h2>
+                            <p class="utilidades-artigos-artigo-texto">
+                                Dentre os inúmeros fatores que contribuíram para o crescimento da banda larga fixa e, consequentemente, para a expansão dos provedores de internet no Brasil, estão as tecnologias avançadas. O mais importante é que estas tecnologias estão acessíveis, mesmo diante do conturbado cenário com inúmeras transformações políticas e econômicas nas sociedades do mundo, devido à crise do Covid-19. 
+                                <a href="#" class="utilidades-artigos-artigo-link">
+                                    Continuar lendo o post 1
+                                </a>
+                            </p>
+                        </article>
+                    </li>
+                    <li id="util_3" class="utilidades-artigos-item">
+                        <article class="utilidades-artigos-artigo">
+                            <img src="img/peso2.jpg" class="utilidades-artigos-artigo-img">
+                            <h2 class="utilidades-artigos-artigo-titulo">
+                                Tecnologia aliada às atividades físicas
+                            </h2>
+                            <p class="utilidades-artigos-artigo-texto">
+                                Nos dias atuais, praticar atividade física já é um hábito e faz parte da natureza humana.
+                                Sua prática regular beneficia tanto os jovens quanto os adultos, e proporciona sensação de
+                                bem estar. om o saudável hábito de se exercitar regularmente, as pessoas mantém um estilo de vida
+                                ativo, o qual traz vários benefícios tais como mais disposição para realizar as tarefas do
+                                dia a dia, aumenta a resistência física e força muscular, aumenta a eficiência do sistema imunológico.                 
+                                <a href="#" class="utilidades-artigos-artigo-link">
+                                    Continuar lendo o post 3
+                                </a>
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="utilidades-artigos-slider">
+                    <li class="cards_1-plano-item" >
+                        <a href="#util_1" data-sliderItem="0"
+                            class="utilidades-artigos-slider-item utilidades-artigos-slider-item--ativo">
+                            Utilidade_1
+                        </a>
+                    </li>
+                    <li class="cards_1-plano-item" >
+                        <a href="#util_2" data-sliderItem="1" class="utilidades-artigos-slider-item">
+                            Utilidade_2
+                        </a>
+                    </li>
+                    <li class="cards_1-plano-item" >
+                        <a href="#util_3" data-sliderItem="2" class="utilidades-artigos-slider-item">
+                            Utilidade_3
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </main>
+    <script src="carrossel.js"></script>
 </body>
-
 </html>
