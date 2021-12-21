@@ -1,0 +1,131 @@
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato-titulo-txt {
+    text-align: left;
+    margin: 0 0 30px 200px;
+    font-size: 25px;
+    color: #5f5a5a;      
+}
+.contato-form-txt {
+    margin: 0 0 10px 200px;
+    color: #4E4B4B;
+    font-size: 17px;
+}
+
+.contato-form-cta {
+    padding: 5px;   
+    min-height: 28px;
+    color: #4E4B4B;    
+    border-radius: 4px;
+    border: 1px solid rgb(245, 133, 4);;
+}
+
+.contato-campo {
+    margin: 5px auto;
+    max-width: 600px;   
+    position: relative;
+}
+ 
+.contato-checkbox {
+    display: flex;
+    align-items: center;   
+    text-align: left;   
+}
+
+.checkbox {
+    margin: 5px;
+    width: 17px;
+    height: 17px;
+}
+ 
+.contato-form-cta:hover,
+.contato-form-cta:focus {
+    color: #FFF;
+    background-color: rgb(245, 133, 4);
+}
+  
+.contato-campo label,
+.contato-campo input:not([type='checkbox']),
+.contato-campo textarea {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+} 
+  
+.contato-campo label {
+    display: flex;
+    align-content: center;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    color: #5f5a5a;
+} 
+  
+.contato-campo select {
+    font-size: 14px;
+    padding: 5px;
+    min-height: 32px;
+    border-radius: 6.5px;
+    border: 2px solid #ccc;
+    outline: 0;
+    background-color: #fff;
+    color: #5f5a5a;
+}
+  
+.contato-campo input,
+.contato-campo textarea {
+    font-size: 14px;
+    padding: 8px;
+    min-height: 32px;
+    border-radius: 6.5px;
+    border: 2px solid #ccc;
+    outline: 0;
+} 
+  
+.contato-campo input:focus,
+.contato-campo textarea:focus {
+    border: 2px solid rgb(8, 151, 39);
+} 
+ 
+
+
+@media screen and (max-width: 830px) {
+    
+    
+    .contato-titulo-txt {    
+        margin: 0;
+        text-align: center;   
+        font-size: 17px;   
+        margin: 5px;
+    }
+
+    .contato-form-txt {
+        margin: 0;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+    }
+        
+    .contato-campo input,
+    .contato-campo label, 
+    .contato-campo select,     
+    .contato-campo select option,
+    .contato-campo textarea {
+        min-height: 22px;
+        font-size: 12px;   
+        margin: 10px;  
+    }
+      
+    .contato-form-cta {       
+        min-height: 25px;
+        font-size: 12px;
+        margin: 0 15px 15px 15px;
+    }
+      
+}
+  

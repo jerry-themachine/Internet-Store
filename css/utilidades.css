@@ -10,7 +10,7 @@
 .utilidades-titulo-txt {
     font-size: 25px;
     color: #5f5a5a;  
-    margin-bottom: 30px;
+   /*  margin-bottom: 30px; */
 }
 
 .utilidades-inicio {
@@ -47,7 +47,8 @@
     display: inline-block;
 } 
   
-.utilidades-artigos-artigo-img {
+.utilidades-artigos-artigo-img {   
+    margin-top: 30px;
     width: 100%;
     display: block;
 }
@@ -63,25 +64,14 @@
   
 .utilidades-artigos-artigo-titulo {
     font-family: 'Montserrat', sans-serif;
-    margin: 10px 0;
+    margin: 25px 0 0 0;
     font-size: 17px;
     color: #4E4B4B;
 }
   
-.utilidades-artigos-artigo-link {
-    color: #EB5757;
-    font-weight: bold;
-}
-/*   
-.utilidades-artigos-slider {
-    width: 100%;
-    margin: 0 auto;
-} */
-  
 .utilidades-artigos-slider {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
   
 .utilidades-artigos-slider-item {
@@ -92,7 +82,7 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    margin: 0 8px;
+    margin: 0 8px  30px 8px;
     border: 0;
 }
   
