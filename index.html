@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/dialog.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/utilidades.css">
@@ -47,7 +48,7 @@
                 inovador para pequenas e médias empresas.
             </h2>
             <button class="indicativo-botao">
-                Conheça nossos serviços
+                <a href="servicos.html" class="indicativo-link">Conheça nossos serviços</a>
             </button>
         </section>
         <!--tecnica-->
@@ -170,7 +171,7 @@
                         <li class="cards_1-plano-item">Whatsapp e Twitter com uso ilimitado</li>
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li><br>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog1">
                         Assinar plano
                     </a>
                 </div>
@@ -184,7 +185,7 @@
                         <li class="cards_1-plano-item">Whatsapp, Twitter, Instagram e Facebook com uso ilimitado</li>
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog2">
                         Assinar plano
                     </a>
                 </div>
@@ -199,7 +200,7 @@
                             ilimitado</li>
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog3">
                         Assinar plano
                     </a>
                 </div>
@@ -224,7 +225,7 @@
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li>
                         <li class="cards_1-plano-item">Atendimento 24h</li>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog4">
                         Assinar plano
                     </a>
                 </div>
@@ -241,7 +242,7 @@
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li>
                         <li class="cards_1-plano-item">Atendimento 24h</li>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog5">
                         Assinar plano
                     </a>
                 </div>
@@ -258,12 +259,35 @@
                         <li class="cards_1-plano-item">Ligações ilimitadas para qualquer operadora</li>
                         <li class="cards_1-plano-item">Atendimento 24h</li>
                     </ul>
-                    <a href="#" class="cards_1-plano-btn">
+                    <a href="#" class="cards_1-plano-btn" id="abrir-dialog6">
                         Assinar plano
                     </a>
                 </div>
-            </div>
+            </div>           
         </section>
+         <!--dialog-->
+         <dialog class="dialog" id="dialog">
+            <div class="dialog-body">
+
+                <h2 class="dialog-titulo">Preencha este campo</h2>
+                <h3 class="dialog-texto">
+                    Nossos consultores entrarão em contato para personalizar seu plano
+                </h3>
+                <form class="dialog-form">
+                    <label class="dialog-label">
+                        e-mail:
+                    </label>
+                    <input type="text" class="dialog-campo" placeholder="Digite seu e-mail...">
+                    <button class="dialog-btn">
+                        Enviar
+                    </button>
+                    <button class="dialog-fechar">
+                        X
+                    </button>
+                </form>
+            </div>
+            <div class="dialog-overlay"></div>
+        </dialog>
         <!--utilidades-->
         <section class="utilidades container" id="utilidade">
             <div class="utilidades-inicio"></div>
@@ -449,11 +473,11 @@
                 <img src="img/logo2.png" class="rodape-logo">
                 <div class="rodape-texto">
                     <p>
-                        © 2021 Jaytech. Todos os direitos reservados. CNPJ: 01.000.000/0001-01 <br>
+                        © 2021 Jaytech - Todos os direitos reservados. CNPJ: 01.000.000/0001-01 <br>
                         Rua do Canto, 0001 - São Canto - SP
 
                     </p>
-                </div>           
+                </div>
                 <div class="rodape-midias">
                     <ul class="rodape-social">
                         <li>
@@ -477,6 +501,7 @@
         </footer>
     </main>
     <script src="carrossel.js"></script>
+    <script src="js/dialog.js"></script>
 </body>
 
 </html>

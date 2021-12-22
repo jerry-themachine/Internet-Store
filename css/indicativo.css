@@ -51,6 +51,11 @@
    
 }
 
+.indicativo-link {
+    text-decoration: none;
+    color: #fff;    
+}
+
 .indicativo-botao:hover,
 .indicativo-botao:focus {
     background: #fff;

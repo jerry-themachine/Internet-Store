@@ -1,0 +1,169 @@
+.dialog {
+    display: none;
+}
+  
+.dialog--aberto {
+    display: block;
+}
+  
+.dialog-body {
+    font-size: 17px;
+    border-radius: 8px;
+    background-color: rgb(222, 228, 198);
+    border: 1px solid #8D8D8D;
+    padding: 50px 25px 25px 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5); 
+    position: fixed;
+    display: inline-block;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-52%);
+    z-index: 3;
+    transition: .3s ease-in;
+    color: #222;
+    width: 500px;
+    max-width: 533px;
+    text-align: left;
+}
+
+.dialog-form {
+    display: flex;
+    flex-wrap: nowrap;    
+}
+  
+.dialog-overlay {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #1787a9;
+}
+  
+.overlayDialog + .dialog {
+    display: block;
+    transform: translate(-50%,-50%);
+}
+  
+.dialog-titulo {
+    font-size: 30px;
+    color: #4E4B4B;
+    line-height: 1;
+}
+  
+.dialog-texto {
+    font-size: 17px;
+    color: #4E4B4B;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+  
+.dialog-label {
+    position: absolute;
+    z-index: -1;
+    left: -9999px;
+}
+  
+.dialog-campo {
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #5E5E5E;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 345px;
+}
+  
+.dialog-btn {
+    vertical-align: top;
+    text-indent: -9999px;
+    border-radius: 8px;
+    border: 1px solid #1787a9;
+    padding: 8px;
+    width: 100%;
+    height: 3.1em;
+    background: url(../img/email.png) no-repeat center; 
+    transition: .2s ease-in;
+}
+  
+.dialog-btn:hover,
+.dialog-btn:focus {
+    background-color: #1787a9;
+    cursor: pointer;
+    background-image: url(../img/email-hover.png);
+}
+  
+.dialog-fechar {
+    position: absolute;
+    background-color: transparent;
+    transform: translate(50%, 50%) scale(1.4);
+    top: -5px;
+    right: 25px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border: 1px solid;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+}
+  
+.dialog-fechar:before {
+    content: 'x';
+    color: #666;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+  
+.dialog-fechar:hover:before,
+.dialog-fechar:focus:before {
+    color: #ce3434;  
+    cursor: pointer;
+}
+  
+@media (max-width: 830px) {
+  
+    .dialog-body {
+        width: 300px;
+    }  
+  
+    .dialog-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .dialog-titulo {
+        font-size: 20px;       
+    }
+
+    .dialog-texto {
+        font-size: 12px;
+    }
+    
+    .dialog-campo {
+        flex-basis: 80%;
+        font-size: 12px;
+        min-width: 270px;
+    }
+  
+    .dialog-btn {
+        flex-basis: 20%;
+        padding:0 45PX 0 45PX;
+        height: 30px;
+    }
+    
+}

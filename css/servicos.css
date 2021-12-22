@@ -1,0 +1,63 @@
+
+.servicos-titulo-txt {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;   
+    font-weight: bold;
+    color: #5f5a5a;
+    font-size: 25px;
+    margin: 30px auto 15px 200px;
+}
+ 
+.btn {
+    display: flex;    
+    justify-content: center;
+    background-color: #1787a9;
+    color: #FFF;
+    max-width: 110px;
+    max-height: 25px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.borda-card {
+    border-color: #1787a9;
+}
+  
+.card {
+    max-width: 288px;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-titulo {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;       
+    color: #5f5a5a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-texto {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;       
+    color: #5f5a5a;
+    font-size: 17px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+
+@media screen and (max-width:830px) {
+    .servicos-titulo-txt {        
+        font-size: 17px;
+        margin-left:  0;
+        text-align: center;
+    }
+
+}
+  
+  
