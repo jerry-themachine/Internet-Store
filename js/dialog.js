@@ -22,7 +22,6 @@ function fechandoDialog() {
 document.querySelector('.dialog-fechar').addEventListener('click', fechandoDialog);
 
 
-
 // Abrir dialog 2
 btnAbreDialog2.addEventListener('click', function() {
   dialog.classList.add('dialog--aberto');

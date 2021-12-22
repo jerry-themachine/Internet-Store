@@ -86,6 +86,10 @@
     border: 2px solid #ccc;
     outline: 0;
 } 
+
+.termos-uso {    
+    color: #0f59c9;    
+}
   
 .contato-campo input:focus,
 .contato-campo textarea:focus {

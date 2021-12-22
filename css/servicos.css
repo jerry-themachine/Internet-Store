@@ -19,7 +19,7 @@
 }
 
 .borda-card {
-    border-color: #1787a9;
+    border: 1px solid #1787a9;
 }
   
 .card {

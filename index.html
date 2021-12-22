@@ -33,7 +33,7 @@
                 <li class="header-nav-item"><a href="#pre-pos">Pré/Pós</a></li>
                 <li class="header-nav-item"><a href="#empresa">Empresas</a></li>
                 <li class="header-nav-item"><a href="#utilidade">Utilidades</a></li>
-                <li class="header-nav-item"><a href="#contato">Contato</a></li>
+                <li class="header-nav-item"><a href="#contratar">Contratar</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +48,7 @@
                 inovador para pequenas e médias empresas.
             </h2>
             <button class="indicativo-botao">
-                <a href="servicos.html" class="indicativo-link">Conheça nossos serviços</a>
+                <a href="servicos.html" id="indicativo-link">Conheça nossos serviços</a>
             </button>
         </section>
         <!--tecnica-->
@@ -136,14 +136,22 @@
                     </div>
                     <div class="sobre-social">
                         <ul class="sobre-social-midia">
-                            <li class="cards_1-plano-item"><img class="sobre-social-img" src="img/android.png"
-                                    alt="Ícone do Android"></li>
-                            <li class="cards_1-plano-item"><img class="sobre-social-img" src="img/blackberry.png"
-                                    alt="Ícone da Blackberry"></li>
-                            <li class="cards_1-plano-item"><img class="sobre-social-img" src="img/apple.png"
-                                    alt="Ícone do iOS"></li>
-                            <li class="cards_1-plano-item"><img class="sobre-social-img" src="img/windowsphone.png"
-                                    alt="Ícone do Windows Phone">
+                            <li class="cards_1-plano-item"><a href="https://www.android.com/intl/pt-BR_br/">
+                                <img class="sobre-social-img" src="img/android.png"
+                                        alt="Ícone do Android">
+                            </a></li>
+                            <li class="cards_1-plano-item"><a href="https://www.blackberry.com/br/pt">
+                                <img class="sobre-social-img" src="img/blackberry.png"
+                                        alt="Ícone da Blackberry">
+                            </a></li>
+                            <li class="cards_1-plano-item"><a href="https://www.apple.com/br/ios/ios-15/">
+                                <img class="sobre-social-img" src="img/apple.png"
+                                        alt="Ícone do iOS">
+                            </a></li>
+                            <li class="cards_1-plano-item"><a href="https://www.microsoft.com/pt-br/download/windowsphone.aspx">
+                                <img class="sobre-social-img" src="img/windowsphone.png"
+                                        alt="Ícone do Windows Phone">
+                            </a>
                             </li>
                         </ul>
                         <div class="sobre-social-texto">
@@ -273,15 +281,15 @@
                 <h3 class="dialog-texto">
                     Nossos consultores entrarão em contato para personalizar seu plano
                 </h3>
-                <form class="dialog-form">
+                <form class="dialog-form" id="dialog-btn">
                     <label class="dialog-label">
                         e-mail:
                     </label>
-                    <input type="text" class="dialog-campo" placeholder="Digite seu e-mail...">
-                    <button class="dialog-btn">
+                    <input type="text" class="dialog-campo" id="email" placeholder="Digite seu e-mail...">
+                    <button class="dialog-btn" type="submit">
                         Enviar
                     </button>
-                    <button class="dialog-fechar">
+                    <button class="dialog-fechar" id="fechar">
                         X
                     </button>
                 </form>
@@ -379,19 +387,19 @@
             </nav>
         </section>
         <!--contato-->
-        <section class="contato" id="contato">
+        <section class="contato" id="contratar"> 
             <div class="contato-container">
                 <h2 class="contato-titulo-txt">
-                    CONTATO
+                    CONTRATAR
                 </h2>
-                <form class="contato-form">
+                <form class="contato-form" id="form">
                     <p class="contato-form-txt">
-                        Oi, tudo bem? Fale com a gente! <br>
-                        Preencha seus dados e sua mensagem:
+                        Bem vindo! Preencha os campos abaixo e <br>
+                        escolha o plano que quer contratar:
                     </p>
                     <div class="contato-campo">
                         <label>Nome: </label>
-                        <input type="text" placeholder="Digite aqui o nome completo " required>
+                        <input type="text" id="nome" placeholder="Digite aqui o nome completo " required>
                     </div>
                     <div class="contato-campo">
                         <label>Email: </label>
@@ -419,8 +427,8 @@
                     </div>
                     <div class="contato-campo">
                         <label>Estado: </label>
-                        <select name="text" id="contato-campo-select">
-                            <option value="estado">Selecione o Estado</option>
+                        <select name="text" id="contato-campo-select" required oninvalid="this.setCustomValidity('Informe o estado para continuar')" onchange="try{setCustomValidity('')}catch(e){}">
+                            <option value="">Selecione o Estado</option>
                             <option value="ac">Acre</option>
                             <option value="al">Alagoas</option>
                             <option value="am">Amazonas</option>
@@ -451,8 +459,25 @@
                         </select>
                     </div>
                     <div class="contato-campo">
+                        <label>Escolha o plano a contratar: </label>
+                        <select name="text" id="contato-campo-select" required oninvalid="this.setCustomValidity('Informe o plano a contratar')" onchange="try{setCustomValidity('')}catch(e){}">
+                            <option value="">Selecione o Plano</option>
+                            <option value="ac">Smart 30</option>
+                            <option value="al">Master 60</option>
+                            <option value="am">Full 200</option>
+                            <option value="ap">Ultra 500</option>
+                            <option value="ba">Mega 700</option>                            
+                        </select>
+                    </div>
+                    <div class="contato-campo">
                         <label>Mensagem: </label>
                         <textarea name="" cols="30" rows="10" required></textarea>
+                        
+                        <div class="contato-checkbox">                            
+                            <input type="checkbox" name="checkbox" value="sim" class="checkbox" required oninvalid="this.setCustomValidity('Você deve aceitar os termos para contratar o plano')" onchange="try{setCustomValidity('')}catch(e){}">
+                            <label for="checkbox" class="contato-label">Li e concordo com os &nbsp<a href="termos.html" class="termos-uso">termos contratuais de serviço</a> 
+                            </label>
+                        </div>
                         <div class="contato-checkbox">
                             <input type="checkbox" name="checkbox" value="sim" class="checkbox">
                             <label for="checkbox" class="contato-label">Receber informações por email</label>
@@ -498,9 +523,10 @@
                 </div>
             </div>
         </footer>
-    </main>
-    <script src="carrossel.js"></script>
+    </main>   
     <script src="js/dialog.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/enviaDialog.js"></script>
 </body>
 
 </html>
