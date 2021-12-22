@@ -1,3 +1,3 @@
-Estou em um processo de aperfeiçamento das minhas habilidaes como desenvolvedor, então epor isso decidi elaborar alguns novos layouts para colocar em prática o uso de algumas ferramentas e tecnologias.
+Estou em um processo de aperfeiçamento das minhas habilidades como desenvolvedor, então por isso decidi elaborar alguns novos layouts para colocar em prática o uso de algumas ferramentas e tecnologias.
 Para este projeto, em questão, estou focado em desenvolver e treinar minhas habilidades com uso de responsividade, versionamento, HTML, CSS e JS.
 Este layout refere-se à um site institucional e estou utilizando algumas ferramentas de desenvolvimento web para a criação de uma loja virtual de planos para internet.
