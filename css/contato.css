@@ -32,7 +32,7 @@
 }
  
 .contato-checkbox {
-    display: flex;
+    display: flex;    
     align-items: center;   
     text-align: left;   
 }
@@ -60,8 +60,7 @@
   
 .contato-campo label {
     display: flex;
-    align-content: center;
-    margin-bottom: 5px;
+    align-content: center;    
     margin-left: 8px;
     color: #5f5a5a;
 } 
